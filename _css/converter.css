@@ -1,0 +1,167 @@
+/*Eric-Meyer Minimum CSS Reset*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video
+{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+
+body{line-height:1}
+
+ol,ul{list-style:none}
+
+blockquote,q{quotes:none}
+
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+
+table{border-collapse:collapse;border-spacing:0}
+
+/* Background Styling */
+body {
+    background: lightblue;
+    font-family: arial;
+    width: 960px;
+    margin: 0 auto;
+}
+/* Header Styling */
+header {
+    background: darkgray;
+    border-radius: 25px;
+    height: 64px;
+    margin-bottom: 8px;
+}
+
+h1 {
+    margin: 8px;
+    margin-left: 16px;
+    padding: 8px; 
+    background: lightgray;
+    border-radius: 10px;
+    font-size: 32px;
+    float:left;
+}
+
+a {
+    margin: 10px 16px;
+    margin-left: 0;
+    border-radius: 10px;
+    padding: 10px 8px;
+    font-size: 24px;
+    float: right;
+    background: lightgray;
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: darkgray;
+}
+/* Main Content Styling/Structure */
+main {
+    width: 960px;
+    margin: 0 auto;
+}
+
+section {
+    width: 456px;
+    background: darkgray;
+}
+
+.column1 {
+    float: left;
+    padding-left: 16px;
+    padding-right: 8px;
+    padding-top: 16px;
+    border-radius: 25px 0 0 25px;
+}
+
+.column2 {
+    float: right;
+    padding-left: 8px;
+    padding-right: 16px;
+    padding-top: 16px;        
+    border-radius: 0 25px 25px 0;
+}
+
+h2 {
+    background: lightgray;
+    font-family: times;
+    padding-left: 8px;
+    padding-top: 4px;
+    font-size: 24px;
+    border-radius: 10px 10px 0 0;
+}
+/* Line Element Styling */
+.line {
+    background: lightgray;
+    border-top: 1px solid black;    
+}
+
+.line:last-child {
+    border-radius: 0 0 10px 10px;
+}
+
+ul {
+    font-size: 16px;
+}
+
+li{
+    display: block;
+    float: left;
+    padding: 16px 0;
+    padding-left: 16px; 
+}
+
+textarea {
+    height: 16px;
+}
+
+.amount {
+    width: 50px;
+}
+
+.type {
+    height: 16px;
+    width: 50px;
+}
+
+.ingredient {
+    width: 200px;
+}
+/* Button Positioning */
+.add {
+    margin:8px 16px;
+}
+
+.reset{
+    margin: 8px 10px;
+}
+
+.convert {
+    margin: 8px;
+}
+/* Footer styling */
+footer {    
+    background: darkgray;
+    border-radius: 25px;
+    height: 48px;
+    margin-top: 8px;
+}
+
+h3 {
+    margin: 12px 16px;
+    padding: 4px 8px;
+    font-size: 16px;
+    float: left;
+    background: lightgray;
+    border-radius: 10px;
+}
+
+/* The Clearfix Technique for clearing floats */
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}

@@ -1,0 +1,113 @@
+<html> 
+    <!--    head Begin-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <title>Converter</title>
+        <link rel = "stylesheet" type = "text/css" href = "_css/converter.css" media="all">
+        <script src="_javascript/converter.js" type="text/javascript" defer></script>
+    </head>
+    <!-- Header End -->
+    
+    <!-- Body Begin -->
+    <body>
+        <!-- Header Begin -->
+        <header id="pageHeader" class="clearfix">
+            <h1>BakersFriend</h1>
+            <a href="converter.html">Converter</a>
+            <a href="index.html">Conversions</a>
+        </header>
+        <!-- Header End -->
+        
+        <!-- Main Content Begin -->
+        <main class="clearfix">
+            <!-- Pound Side of the Converter -->
+            <section class="column1" id="pounds">
+                <!-- Pound Side Header -->
+                <h2>United States</h2>
+                <!-- Content Wrapper for JavaScript Function -->
+                <div id="wrapperP">
+                    <!-- Poundside Begin -->
+                    <div class="line poundSide" id="lineP0">
+                        <!-- Line Elements-->
+                        <ul class="clearfix">
+                            <!-- Entered Amount -->
+                            <li>
+                                <textarea class="amount" placeholder="amount"></textarea>
+                            </li>
+                            <!-- Selected Type -->
+                            <li>
+                                <select class="type">
+                                    <option>tsp</option>
+                                    <option>tbsp</option>
+                                    <option>cups</option>
+                                    <option>oz</option>
+                                    <option>floz</option>
+                                    <option>pt</option>
+                                    <option>qt</option>
+                                    <option>gal</option>
+                                </select>
+                            </li>
+                            <li>
+                                <p>of</p>
+                            </li>
+                            <!-- Ingredient Input -->
+                            <li>
+                                <textarea class="ingredient" placeholder="ingredient"></textarea>
+                            </li>
+                        </ul>
+                        <!-- End Line Elements -->
+                    </div>
+                    <!-- Poundside End -->
+                </div>
+                <!-- Content Wrapper End -->
+                <!-- Add Button to add Extra Lines -->
+                <button class="add" onclick="addLine()">add</button>
+                <!-- Reset Button to add Reset the Number of Lines -->
+                <button class="reset" onclick="reset()">reset</button>
+            </section>
+            <!-- End Pound Side -->
+            
+            <!-- Metric Side-->
+            <section class="column2" id="metric">
+                <!-- Metric Side Header -->
+                <h2>Metric</h2>
+                <!-- Content Wrapper for JavaScript Function -->
+                <div id="wrapperM">
+                    <!-- Metric Side Begin -->
+                    <div class="line metricSide" id="lineM0">
+                        <!-- Line Elements to be Updated by the Convert Function -->
+                        <ul class="clearfix">
+                            <li>
+                                <p class="amount" id="mAmount">amount</p>
+                            </li>
+                            <li>
+                                <p class="type" id="mType">type</p>
+                            </li>
+                            <li>
+                                <p>of</p>
+                            </li>
+                            <li>
+                                <p class="ingredient" id
+                                   mIngredient>ingredient</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Metric Side End -->
+                </div>
+                <!-- Content Wrapper End -->
+                <!-- Convert Button to Convert the Pound Data to Metric Data -->
+                <button class="convert" style="float: right;" onclick="convert()">convert</button>
+            </section>
+            <!-- Metric Side End -->
+        </main>
+        
+        <!-- Footer Begin -->
+        <footer class="clearfix">
+            <!-- Website where I got all of my data -->            
+            <h3>Source: https://www.infoplease.com/science-health/weights-measures/us-metric-cooking-conversions</h3>
+        </footer>
+        <!-- Footer End -->
+    </body>  
+    <!-- Body End-->    
+</html>
